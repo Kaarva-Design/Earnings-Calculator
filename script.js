@@ -47,3 +47,13 @@ $('input[type="range"]').rangeslider({
         dDay.html(sliderValue);
     }
 });
+
+$("#salary").keyup(function() {
+    if ($("#salary").val().length > 2) {
+        $("#slider").removeAttr("disabled")
+        $("#js-rangeslider-0").removeClass("rangeslider--disabled")
+    } else {
+        $("#slider").attr("disabled")
+        $("#js-rangeslider-0").addClass("rangeslider--disabled")
+    }
+});

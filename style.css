@@ -53,6 +53,7 @@ h5 {
     font-size: 22px;
     padding-left: 10px;
     border-radius: 6px;
+    border: 2px solid #e81d61;
 }
 
 #salary::placeholder {
