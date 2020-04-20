@@ -39,11 +39,11 @@ $('input[type="range"]').rangeslider({
 
         let cap = Math.round(25 * salaryRelative / 100);
 
-        kaarvaEarnings.html(cap < 10000 ? `<div class="inr">₹</div>${cap}` : "₹10000");
+        kaarvaEarnings.html(cap < 10000 ? `<div class="inr">₹</div>${cap}` : `<div class="inr">₹</div>10000`);
 
-        earnings.html(`<div class="inr">₹</div>${Math.round(salaryPerDay * sliderValue)}` )
+        earnings.html(`<div class="inr">₹</div>${Math.round(salaryPerDay * sliderValue)}`)
         salaryPerDay = salary / 30;
         salaryRelative = salaryPerDay * sliderValue;
         dDay.html(sliderValue);
-      }
+    }
 });

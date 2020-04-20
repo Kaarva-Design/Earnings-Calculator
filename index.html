@@ -16,29 +16,48 @@
 <body>
     <header>
         <img src="kaarvalogobrand.png" style="height: 35px;">
+        <!-- <div id="titlesmall" style="float: right; padding-top: 11px; font-size: 12px; font-weight: 500; color: #1f225a;">Earnings Calculator
+        </div> -->
     </header>
-    <div id="container">
-        <section id="sec--earnings">
+    <div id="splash">
+        <h3>Earnings Calculator</h3>
+        <h1>How much do you make in a month?</h1>
+        <input />
+        <div style="background-color: #e81d61;border-radius: 30px;height: 50px;width: 50px;display: flex;justify-content: center;align-items: center;"><img src="next.svg" style="height: 22px" /></div>
+          <h5>Info</h5>
+    </div>
+    <div id="container" style="display: none;">
+        <section id="sec--earnings" style="position: relative;">
             <div>Your <span id="dday">0</span> day earnings
-                <div id="earnings" class="value"><div class="inr">₹</div><div>0</div></div>
+                <div id="earnings" class="value">
+                    <div class="inr">₹</div>
+                    <div>0</div>
+                </div>
             </div>
+            <img src="earnings.png" style="height: 125px; position: absolute; margin-top: -96px; right: -57px; opacity: 0.8;" />
         </section>
-        <section id="sec--kaarvaearnings">
-            <div>Amount you can withdaw with Kaarva
-                <div id="kaarvaearnings" class="value"><div class="inr">₹</div><div>0</div></div>
+        <section id="sec--kaarvaearnings" style="position: relative;">
+            <div style="position: relative; z-index: 99">Amount you can access with Kaarva
+                <div id="kaarvaearnings" class="value">
+                    <div class="inr">₹</div>
+                    <div>0</div>
+                </div>
             </div>
+            <img src="unlock.png" style="height: 130px; position: absolute; margin-top: -84px; right: -26px; opacity: 0.8;" />
         </section>
-        <section id="sec--main">
-            <div>
+        <section id="sec--main" style="position: relative;">
+            <div style="position: relative; z-index: 5">
                 Move the slider to see your earnings
                 <div style="margin-top: 110px;">
                     <input id="slider" type="range" min="1" max="30" step="1" value="10" />
                 </div>
             </div>
-            <div style="display: flex; margin-top: 30px; justify-content: space-between; align-items: center;">
-                <div style="width: 68%"><input id="salary" type="number" name=""></div>
+            <div style="display: flex; margin-top: 30px; justify-content: space-between; align-items: flex-end; position: relative; z-index: 6">
+                <div style="width: 68%"><label for="salary">Your monthly salary</label>
+                    <input id="salary" type="number" name="salary" placeholder="Enter your monthly salary"></div>
                 <div id="changesalarybtn">Change</div>
             </div>
+            <img src="slidergraphic.png" style="height: 200px; position: absolute; margin-top: -170px; right: -72px; opacity: 0.1;" />
         </section>
     </div>
     <script src="script.js" type="text/javascript"></script>
