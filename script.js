@@ -49,7 +49,7 @@ $('input[type="range"]').rangeslider({
 });
 
 $("#salary").keyup(function() {
-    if ($("#salary").val().length > 2) {
+    if ($("#salary").val().length > 3) {
         $("#slider").removeAttr("disabled")
         $("#js-rangeslider-0").removeClass("rangeslider--disabled")
     } else {
