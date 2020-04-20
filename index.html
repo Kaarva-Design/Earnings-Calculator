@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="thoran">
+    <link rel="icon" type="image/png" href="fav.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://andreruffert.github.io/rangeslider.js/assets/rangeslider.js/dist/rangeslider.css"> -->
+    <title>Kaarva - Earnings Calculator</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="https://rangeslider.js.org/assets/rangeslider.js/dist/rangeslider.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <img src="kaarvalogobrand.png" style="height: 35px;">
+    </header>
+    <div style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+        <div class="value">Your <span id="dday">0</span> day earnings
+            <div id="earnings">₹50000</div>
+        </div>
+        <div>Amount you can withdaw with Kaarva
+            <div id="kaarvaearnings">₹5000</div>
+        </div>
+        <div>
+            Move to slider to see your earnings
+            <div style="margin-top: 110px;">
+                <input id="slider" type="range" min="1" max="30" step="1" value="10" />
+            </div>
+        </div>
+        <div><input id="salary" type="" name="">
+            <div></div>
+        </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
